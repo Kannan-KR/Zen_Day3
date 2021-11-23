@@ -1,0 +1,48 @@
+1. For the given JSON iterate over all for loops (for, for in, for of, forEach)
+	(I used JSON from https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json)
+
+	// forEach
+	inp.forEach((item) => {
+	  console.log(item.name);
+	});
+
+	// for
+	for (var i = 0; i < inp.length; i++) {
+	  console.log(inp[i].name);
+	};
+
+	// for in
+	for (var i in inp) {
+	  console.log(inp[i].name);
+	};
+
+	//for of
+	for (var iter of inp) {
+	  console.log(iter.name);
+	};
+
+
+2. Create your own resume data in JSON format
+	Let myResume = {
+	  personal: {
+	    firstname: "Kannan",
+	    lastname: "K R",
+	    gender: "M",
+	    dob: "1-1-1999"
+	  },
+	  education: {
+	    secondary: "AGN school",
+	    higher_secondary: "SKV school",
+	    ug: "Amrita"
+	  },
+	  experience: {
+	    department: "IT",
+	    skills: {
+	      "SQL",
+	      "SAS",
+	      "Data analysis and reporting",
+	      "Python"
+	    },
+	    exp: 3
+	  }
+	}
